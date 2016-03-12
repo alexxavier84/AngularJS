@@ -4,14 +4,17 @@
         <title>Controller</title>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js" ></script>
         <script src="js/inheritanceApp.js"></script>
+        <link rel="stylesheet" href="css/inheritanceApp.css">
     </head>
     <body ng-app="inheritanceApp">
-        <div ng-controller="MainController">
-            <p>Good {{timeofday}}  {{name}}</p>
-            <div ng-controller="ChildController">
+        <div class="spicy">
+            <div ng-controller="MainController">
                 <p>Good {{timeofday}}  {{name}}</p>
-                <div ng-controller="GrantChildController">
+                <div ng-controller="ChildController">
                     <p>Good {{timeofday}}  {{name}}</p>
+                    <div ng-controller="GrantChildController">
+                        <p>Good {{timeofday}}  {{name}}</p>
+                    </div>
                 </div>
             </div>
         </div>
