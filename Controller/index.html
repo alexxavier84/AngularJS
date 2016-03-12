@@ -7,8 +7,9 @@
     </head>
     <body ng-app="spicyApp1">
         <div ng-controller="SpicyController">
-            <button ng-click="chilliSpicy()">Chilli</button>
-            <button ng-click="jalapenoSpicy()">Jalapeno</button>
+            <input ng-model="customSpice">
+            <button ng-click="chilliSpicy('')">Chilli</button>
+            <button ng-click="customSpicy(customSpice)">Custom Spice</button>
             <p>The food is {{spice}} spicy</p>
         </div>
     </body>
