@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Controller</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js" ></script>
+        <script src="js/inheritanceApp.js"></script>
+    </head>
+    <body ng-app="inheritanceApp">
+        <div ng-controller="MainController">
+            <p>Good {{timeofday}}  {{name}}</p>
+            <div ng-controller="ChildController">
+                <p>Good {{timeofday}}  {{name}}</p>
+                <div ng-controller="GrantChildController">
+                    <p>Good {{timeofday}}  {{name}}</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
